@@ -1,0 +1,22 @@
+@import '../../styles/themes/default.css';
+
+.sidenav {
+  width: 240px;
+  height: 100vh;
+  background: var(--background-color);
+  overflow-x: hidden;
+  padding-left: 10px;
+}
+
+.sidenav a {
+  padding: 10px;
+  text-decoration: none;
+  font-family: var(--font);
+  font-size: 1.1rem;
+  color: var(--link-color);
+  display: block;
+}
+
+.sidenav a:hover {
+  background-color: var(--alternate-background-color);
+}

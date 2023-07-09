@@ -1,0 +1,8 @@
+@import '../../styles/themes/default.css';
+
+.logo {
+  color: var(--primary-color);
+  margin: 20px 0px;
+  font-family: var(--font);
+  font-weight: 800;
+}

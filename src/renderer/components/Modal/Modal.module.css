@@ -1,0 +1,56 @@
+@import '../../styles/themes/default.css';
+
+.modal {
+  display: block; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  color: var(--text-color);
+}
+
+.modal_content {
+  background-color: var(--background-color);
+  margin: auto;
+  padding: 20px;
+  border: 1px solid var(--primary-color);
+  width: 50%;
+}
+
+/* The Close Button */
+.close {
+  color: var(--text-cancel-color);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px;
+}
+
+.formGroup > input {
+  font-size: 1rem;
+  padding: 5px;
+  margin: 5px 0px;
+  border: 1px solid;
+  border-radius: 4px;
+  border-color: var(--primary-color);
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
