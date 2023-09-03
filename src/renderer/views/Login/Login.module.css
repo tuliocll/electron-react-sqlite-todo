@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  background-image: linear-gradient(
+    45deg,
+    hsl(240deg 93% 83%) 0%,
+    hsl(235deg 75% 78%) 11%,
+    hsl(231deg 64% 73%) 22%,
+    hsl(227deg 57% 68%) 33%,
+    hsl(224deg 51% 62%) 44%,
+    hsl(220deg 47% 57%) 56%,
+    hsl(217deg 44% 52%) 67%,
+    hsl(214deg 49% 46%) 78%,
+    hsl(210deg 61% 40%) 89%,
+    hsl(205deg 90% 32%) 100%
+  );
+}
+
+.loginBox {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.inputField {
+  width: 90%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.signupContainer {
+  margin-top: 10px;
+  text-align: right;
+}
+
+.link {
+  color: #007bff;
+  text-decoration: none;
+}

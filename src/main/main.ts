@@ -22,6 +22,7 @@ import {
   updateTODO,
   TODO,
 } from './services/Database.service';
+import { getUser, login, register } from './services/Auth.service';
 
 class AppUpdater {
   constructor() {
@@ -149,6 +150,15 @@ app
     });
     ipcMain.handle('todo:getAll', async () => {
       return getAllTODO();
+    });
+    ipcMain.handle('auth:login', async (_, user: Auth) => {
+      return login(user);
+    });
+    ipcMain.handle('auth:register', async (_, user: Auth) => {
+      return register(user);
+    });
+    ipcMain.handle('auth:getUser', async (_, username: string) => {
+      return getUser(username);
     });
     createWindow();
     app.on('activate', () => {
