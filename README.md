@@ -5,7 +5,9 @@ This project uses React for the UI part, Better Sqlite to connect to the databas
 
 ![](preview.jpg)
 
-Created using the [Electron React Boilerplate](https://electron-react-boilerplate.js.org/)
+You can found the Offline Auth code on the `feat/offline-auth` branch.
+
+![](offline-auth.gif)
 
 ## Libs
 
@@ -17,3 +19,5 @@ Created using the [Electron React Boilerplate](https://electron-react-boilerplat
 ## Requirements
 
 - Nodejs 14+
+
+Created using the [Electron React Boilerplate](https://electron-react-boilerplate.js.org/)
