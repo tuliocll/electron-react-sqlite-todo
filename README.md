@@ -5,7 +5,7 @@ This project uses React for the UI part, Better Sqlite to connect to the databas
 
 ![](preview.jpg)
 
-You can found the Offline Auth code on the `feat/offline-auth` branch.
+You can found the Offline Auth code from the [Offline auth with Electron + SQLite + React post](https://tuliocalil.com/offline-auth-with-electron-sqlite-react/) on the `feat/offline-auth` branch.
 
 ![](offline-auth.gif)
 
