@@ -8,11 +8,20 @@ export type TODO = {
   status: number;
 };
 
+const isDevelopment =
+  process.env.NODE_ENV === 'development' || process.env.DEBUG_PROD === 'true';
+
 export function connect() {
-  return Database(
-    path.join(__dirname, '../../../', 'release/app', 'database.db'),
-    { verbose: console.log, fileMustExist: true },
-  );
+  const databasePath = isDevelopment
+    ? path.join(__dirname, '../../../', 'release/app', 'database.db')
+    : path
+        .join(__dirname, '../../database.db')
+        .replace('app.asar', 'app.asar.unpacked');
+
+  return Database(path.resolve(databasePath), {
+    verbose: console.log,
+    fileMustExist: true,
+  });
 }
 
 export function insertTODO(todo: TODO) {
