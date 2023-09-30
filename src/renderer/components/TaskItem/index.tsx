@@ -45,9 +45,7 @@ export default function TaskItem({
       />
       <div className="col">
         <p className={styles['task-label']}>{label}</p>
-        <p className={styles['task-date']}>
-          {format(new Date(date), "E., dd 'de' MMM")}
-        </p>
+        <p className={styles['task-date']}>{new Date(date).toJSON()}</p>
         <div>
           <button className="button" onClick={handleEdit}>
             Editar
