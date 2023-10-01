@@ -19,10 +19,7 @@ export default function AuthProvider({
     await window.electron.register(user);
   };
 
-  let logout = async () => {
-    setAuthed(false);
-    window.location.href = '/login';
-  };
+  let logout = async () => setAuthed(false);
 
   let value = { authed, signin, register, logout };
 
