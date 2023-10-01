@@ -18,7 +18,7 @@ export default function Modal({ onClose, initialData, onSave }: Modal) {
 
     onSave({
       title,
-      date: initialData?.date || new Date().toLocaleString(),
+      date: initialData?.date || new Date().toJSON(),
       status: initialData?.status || 0,
       id: initialData?.id,
     });
